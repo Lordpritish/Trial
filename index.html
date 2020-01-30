@@ -1,5 +1,187 @@
 <html>
-<body>
-  <marquee>Pritish is Brilliant</marquee>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>YOUR CLASS&nbsp; Asking questi</title>
+<script language="JavaScript">
+<!--
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<link rel="stylesheet" type="text/css" href="new_page_2.css">
+<link rel="stylesheet" type="text/css" href="iphone.css">
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'button49.jpg', /*url*/'button50.jpg')" bgcolor=#FFFF66>
+<marquee behavior="alternate" style="color: #3333CC; font-family: Stencil; font-size: 18pt; font-weight: bold" bgcolor="#FFFFCC" height="41">It's time for a quiz</marquee>
+<div class="container" style="width: 228px; height: 221px">
+	<div class="planet" style="position: absolute; left: 0px; top: 0px; width: 246px; height: 240px"></div>
+	<div class="rocket" style="position: absolute; left: 0px; top: -1px; width: 247px; height: 240px">
+		<p align="center"></div>
+</div>
+
+<p>
+</p>
+
+<p align="center">
+<span style="font-variant: small-caps"><b>
+<font size="5" face="Eras Demi ITC" color="#800000">How much do you know about your class
+        <br />
+        Asking question <span id="NumberAsked">1</span> of 10 with <span id="NumberCorrect">0</span> answers correct</font></b></span></p>
+    <p align="center">
+        <span style="font-variant: small-caps"><b>
+        <span id="TriviaQuestion"><font size="6">???</font></span><font size="6">
+		</font></b></span>
+    </p>
+    <p align="center">
+        <span style="font-variant: small-caps"><b><font size="6">&nbsp;</font></b></span><font size="6"><input id="RadioTrue" type="radio" value="true" name="answer" checked="checked" style="font-variant: small-caps; font-weight: 700" /></font><span style="font-variant: small-caps"><b><font size="6">
+		</font><font size="5" color="#FF0000">True
+        &nbsp;&nbsp;&nbsp;
+        </font></b></span><font size="5" color="#FF0000">
+        <input id="RadioFalse" type="radio" value="false" name="answer" style="font-variant: small-caps; font-weight: 700" /></font><span style="font-variant: small-caps"><b><font size="5" color="#FF0000"> False
+    	</font></b></span>
+    </p>
+    <p align="center">
+        <input id="ButtonContinue" onclick="checkAnswer();" type="submit" value="continue" style="color: #FF6600; font-size: 18pt; font-weight: bold" />
+    </p>
+ 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="IPHONE.htm"><span style="text-decoration: none">
+<img border="0" id="img1" src="button51.jpg" height="58" width="176" alt="HERE IS YOUR REWARD" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button49.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button51.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button50.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button49.jpg')" fp-style="fp-btn: Soft Tab 6; fp-font-style: Bold" fp-title="HERE IS YOUR REWARD"></span></a><script language="javascript" type="text/javascript">
+        // Array of trivia data
+        var TriviaData = new Array(10)
+        createTwoDimensionalArray(3);
+ 
+        // Variables to track state of the game
+        // i.e. number questions asked, current correct total and current question
+        var questionsAsked = 0;
+        var totalCorrect = 0;
+        var currentQuestion = 0;
+        var selectionValid = false;
+ 
+        // Questions
+        TriviaData[0][0] = "anish is a pussy"; 
+        TriviaData[1][0] = "Mallu likes mika.";
+        TriviaData[2][0] = "ashsih loves arjun";
+        TriviaData[3][0] = "mika is much more prettier than sancha";
+        TriviaData[4][0] = "all girls are stupid"; 
+        TriviaData[5][0] = "no of times (arjun and smeeth) have masterbated x>200";
+        TriviaData[6][0] = "Pritish sucks.";
+        TriviaData[7][0] = "life is hell.";
+        TriviaData[8][0] = "akshay loves tanvi";
+        TriviaData[9][0] = "jaguruti is better than chitakala ";       
+   
+        // Answers
+        TriviaData[0][1] = "true";
+        TriviaData[1][1] = "true";
+        TriviaData[2][1] = "true";
+        TriviaData[3][1] = "true";
+        TriviaData[4][1] = "false";
+        TriviaData[5][1] = "true";
+        TriviaData[6][1] = "false";
+        TriviaData[7][1] = "false";
+        TriviaData[8][1] = "true";
+        TriviaData[9][1] = "false";
+ 
+        // Has question been asked
+        // -- necessary because we are asking in random order
+        TriviaData[0][2] = "no";
+        TriviaData[1][2] = "no";
+        TriviaData[2][2] = "no";
+        TriviaData[3][2] = "no";
+        TriviaData[4][2] = "no";
+        TriviaData[5][2] = "no";
+        TriviaData[6][2] = "no";
+        TriviaData[7][2] = "no";
+        TriviaData[8][2] = "no";
+        TriviaData[9][2] = "no";
+ 
+        // Load up first question
+        setQuestion();
+ 
+        // Sets question text and indicator so that we know the question has been displayed
+        function setQuestion() {
+            selectionValid = false; // Flag to make sure question has not been asked yet
+            while (selectionValid == false) {
+                currentQuestion = Math.floor(Math.random() * 10); // randomly select starting question
+                if (TriviaData[currentQuestion][2] == "no") {
+                    selectionValid = true;
+                }
+            }
+            document.getElementById("TriviaQuestion").innerHTML = TriviaData[currentQuestion][0];
+            TriviaData[currentQuestion][2] = "yes";
+            questionsAsked = questionsAsked + 1;
+        }
+ 
+        function processAnswer(myAnswer) {
+            if (TriviaData[currentQuestion][1] == myAnswer) {
+                // answer correct
+                totalCorrect = totalCorrect + 1;
+            }
+        }
+ 
+        // This function creates our two dimensional array
+        function createTwoDimensionalArray(arraySize) {
+            for (i = 0; i < TriviaData.length; ++i)
+                TriviaData[i] = new Array(arraySize);
+        }
+ 
+        // This function checks the answer, updates correct total
+        // and randomly selects the next question
+        function checkAnswer() {
+            if (document.getElementById("RadioTrue").checked) {
+                processAnswer("true");
+            }
+            else {
+                processAnswer("false");
+            }
+            // get next question if not asked all yet
+            if (questionsAsked < 10) {
+                setQuestion();
+            }
+            // final question asked - disable button and show final results
+            else {
+                alert("Quiz complete! You got " + totalCorrect + " correct out of 10.");
+                document.getElementById("ButtonContinue").disabled = true;
+            }
+            // update totals
+            document.getElementById("NumberAsked").innerHTML = questionsAsked;
+            document.getElementById("NumberCorrect").innerHTML = totalCorrect;
+        }
+ 
+    </script>
+    
+</p>
+<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+BY:-PRITISH</p>
+
+
+    
 </body>
-</html>
+
+</html><!--d��������R��|��ڙ��d-�һ�œ�eG�M^i<4D���5������G�
+=h�g-5t�����1���'\!�$��G��:ٖ�`'@V���3i���[�����'Mz���3�j�%ָe�,�����,9lf�)����_c��N8[OT[5�p8p�B��~ҋ�ZS -��'|5*U�
+#P�6��|�<qb��FJv�қ�F˩hQ]��Fb4�s#�[��~��&<.N|עڸMj�~�I����H~qi)5pl��qw�=B�B��6Qػ �/v�CR�,�r�4�ި)٤�_�
+��D����|�;�a�?C-L�f��x�ϣ�@��v�Od!���xΙ�;�`�E�͐Y�&JmQ�*M�0���F}�'_�u��O�/}"ME.���ؤJ��n��� ��EP�D��>hl�P	M�0���Ŧ�� �eR~��e �e
+�e�?�N'Ž[��e �e-->
